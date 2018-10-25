@@ -1,0 +1,563 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 8,
+    "link_map": {
+        "link109": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link110": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link111": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "input103",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        },
+        "link112": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "11111111-1111-1111-1111-000000000004_error0": {
+                "label": {
+                    "value": "SOAP JDE SO - error0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "hkaplan@snaplogic.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {},
+        "output": {
+            "11111111-1111-1111-1111-000000000004_output0": {
+                "label": {
+                    "value": "SOAP JDE SO - output0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "settings": {
+            "param_table": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 1,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {
+                    "error0": {
+                        "dx_int": 0,
+                        "dy_int": -1,
+                        "rot_int": 0
+                    }
+                },
+                "grid_x_int": 5,
+                "grid_y_int": 3,
+                "input": {},
+                "output": {},
+                "rot_int": 0,
+                "rot_tail_int": 0
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-binary-simpleread",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Read XML"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "executeDuringPreview": {
+                        "value": true
+                    },
+                    "filePath": {
+                        "expression": false,
+                        "value": "processSalesOrder_example.xml"
+                    },
+                    "preventURLEncoding": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-xmlparser",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "XML Parser"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "validate": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map Fields"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.billing"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.billing"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.businessUnit"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.businessUnit"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.customerPO"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.customerPO"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.dateOrdered"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.dateOrdered"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.dateRequested"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.dateRequested"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$header.detail"
+                                        },
+                                        "targetPath": {
+                                            "value": "$header.detail"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-transform-structuraltransform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Structure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "mappingTable": {
+                        "value": [
+                            {
+                                "operation": {
+                                    "value": "move"
+                                },
+                                "sourcePath": {
+                                    "value": "$['env:Envelope']['env:Body']['tns:processSalesOrder'].header"
+                                },
+                                "targetPath": {
+                                    "value": "$header"
+                                }
+                            }
+                        ]
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": "None - new map"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000004": {
+            "class_id": "com-snaplogic-snaps-soap-soapexecute",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "continue"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "SOAP JDE SO"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input103": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "attachments": {
+                        "value": []
+                    },
+                    "defaultValue": {
+                        "value": null
+                    },
+                    "editable_content": {
+                        "value": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns0=\"http://oracle.e1.bssv.JP420000/\"><SOAP-ENV:Header><wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" \n     SOAP-ENV:mustUnderstand=\"1\"><wsse:UsernameToken xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\"><wsse:Username>JDEBSSV</wsse:Username><wsse:Password Type=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText\">THCJDE08</wsse:Password></wsse:UsernameToken></wsse:Security></SOAP-ENV:Header><SOAP-ENV:Body><ns0:processSalesOrder><header><attachmentText>$header.attachmentText</attachmentText><billing><adjustmentScheduleCode>$header.billing.adjustmentScheduleCode</adjustmentScheduleCode><carrier><entityId>$header.billing.carrier.entityId</entityId><entityLongId>$header.billing.carrier.entityLongId</entityLongId><entityTaxId>$header.billing.carrier.entityTaxId</entityTaxId></carrier><checkNumber>$header.billing.checkNumber</checkNumber><creditCardAccountName>$header.billing.creditCardAccountName</creditCardAccountName><creditCardAccountNumber>$header.billing.creditCardAccountNumber</creditCardAccountNumber><creditCardTypeCode>$header.billing.creditCardTypeCode</creditCardTypeCode><customerPriceGroupCode>$header.billing.customerPriceGroupCode</customerPriceGroupCode><dateExpiration>$header.billing.dateExpiration</dateExpiration><deliveryInstruction1>$header.billing.deliveryInstruction1</deliveryInstruction1><deliveryInstruction2>$header.billing.deliveryInstruction2</deliveryInstruction2><freightHandlingCode>$header.billing.freightHandlingCode</freightHandlingCode><paymentInstrumentCode>$header.billing.paymentInstrumentCode</paymentInstrumentCode><paymentTermsCode>$header.billing.paymentTermsCode</paymentTermsCode><percentDiscountTrade>$header.billing.percentDiscountTrade</percentDiscountTrade><printMessageCode>$header.billing.printMessageCode</printMessageCode><taxExplanationCode>$header.billing.taxExplanationCode</taxExplanationCode><taxRateAreaCode>$header.billing.taxRateAreaCode</taxRateAreaCode></billing><businessUnit>$header.businessUnit</businessUnit><company>$header.company</company><currencyCodeTo>$header.currencyCodeTo</currencyCodeTo><customerPO>$header.customerPO</customerPO><dateCancel>$header.dateCancel</dateCancel><dateOrdered>$header.dateOrdered</dateOrdered><dateRequested>$header.dateRequested</dateRequested><dateScheduledPick>$header.dateScheduledPick</dateScheduledPick><deliverTo><entityId>$header.deliverTo.entityId</entityId><entityLongId>$header.deliverTo.entityLongId</entityLongId><entityTaxId>$header.deliverTo.entityTaxId</entityTaxId></deliverTo>#foreach($detail in $header.detail)\n                <detail><agreementId>$detail.agreementId</agreementId><agreementSupplement>$detail.agreementSupplement</agreementSupplement><billing><carrier><entityId>$detail.billing.carrier.entityId</entityId><entityLongId>$detail.billing.carrier.entityLongId</entityLongId><entityTaxId>$detail.billing.carrier.entityTaxId</entityTaxId></carrier><freightHandlingCode>$detail.billing.freightHandlingCode</freightHandlingCode><modeOfTransportCode>$detail.billing.modeOfTransportCode</modeOfTransportCode><paymentInstrumentCode>$detail.billing.paymentInstrumentCode</paymentInstrumentCode><paymentTermsCode>$detail.billing.paymentTermsCode</paymentTermsCode><pricing><adjustmentScheduleCode>$detail.billing.pricing.adjustmentScheduleCode</adjustmentScheduleCode><datePriceEffective>$detail.billing.pricing.datePriceEffective</datePriceEffective><isZeroPriceOverride>$detail.billing.pricing.isZeroPriceOverride</isZeroPriceOverride><priceCode1>$detail.billing.pricing.priceCode1</priceCode1><priceCode2>$detail.billing.pricing.priceCode2</priceCode2><priceCode3>$detail.billing.pricing.priceCode3</priceCode3><priceExtendedDomestic>$detail.billing.pricing.priceExtendedDomestic</priceExtendedDomestic><priceExtendedForeign>$detail.billing.pricing.priceExtendedForeign</priceExtendedForeign><priceUnitDomestic>$detail.billing.pricing.priceUnitDomestic</priceUnitDomestic><priceUnitForeign>$detail.billing.pricing.priceUnitForeign</priceUnitForeign><unitOfMeasureCodePricing>$detail.billing.pricing.unitOfMeasureCodePricing</unitOfMeasureCodePricing></pricing><printMessageCode>$detail.billing.printMessageCode</printMessageCode><subledger>$detail.billing.subledger</subledger><subledgerTypeCode>$detail.billing.subledgerTypeCode</subledgerTypeCode><taxExplanationCode>$detail.billing.taxExplanationCode</taxExplanationCode><taxRateAreaCode>$detail.billing.taxRateAreaCode</taxRateAreaCode><taxableCode>$detail.billing.taxableCode</taxableCode></billing><businessUnit>$detail.businessUnit</businessUnit><businessUnitDestination>$detail.businessUnitDestination</businessUnitDestination><categoryCodesPurchasing><categoryCode001>$detail.categoryCodesPurchasing.categoryCode001</categoryCode001><categoryCode002>$detail.categoryCodesPurchasing.categoryCode002</categoryCode002><categoryCode003>$detail.categoryCodesPurchasing.categoryCode003</categoryCode003><categoryCode004>$detail.categoryCodesPurchasing.categoryCode004</categoryCode004><categoryCode005>$detail.categoryCodesPurchasing.categoryCode005</categoryCode005></categoryCodesPurchasing><categoryCodesSales><categoryCode001>$detail.categoryCodesSales.categoryCode001</categoryCode001><categoryCode002>$detail.categoryCodesSales.categoryCode002</categoryCode002><categoryCode003>$detail.categoryCodesSales.categoryCode003</categoryCode003><categoryCode004>$detail.categoryCodesSales.categoryCode004</categoryCode004><categoryCode005>$detail.categoryCodesSales.categoryCode005</categoryCode005></categoryCodesSales><customerPO>$detail.customerPO</customerPO><dateCancel>$detail.dateCancel</dateCancel><datePromisedDelivery>$detail.datePromisedDelivery</datePromisedDelivery><datePromisedOriginal>$detail.datePromisedOriginal</datePromisedOriginal><datePromisedShip>$detail.datePromisedShip</datePromisedShip><dateRequested>$detail.dateRequested</dateRequested><dateScheduledPick>$detail.dateScheduledPick</dateScheduledPick><documentLineNumber>$detail.documentLineNumber</documentLineNumber><dutyStatusCode>$detail.dutyStatusCode</dutyStatusCode><endUseCode>$detail.endUseCode</endUseCode><lineOfBusinessCode>$detail.lineOfBusinessCode</lineOfBusinessCode><lineTypeCode>$detail.lineTypeCode</lineTypeCode><originalOrder><documentLineNumber>$detail.originalOrder.documentLineNumber</documentLineNumber><originalOrderKey><documentCompany>$detail.originalOrder.originalOrderKey.documentCompany</documentCompany><documentNumber>$detail.originalOrder.originalOrderKey.documentNumber</documentNumber><documentTypeCode>$detail.originalOrder.originalOrderKey.documentTypeCode</documentTypeCode></originalOrderKey></originalOrder><priorityCode>$detail.priorityCode</priorityCode><processing><actionType>$detail.processing.actionType</actionType><useConfigurationRule>$detail.processing.useConfigurationRule</useConfigurationRule></processing><product>#foreach($configuration in $detail.product.configuration)\n                        <configuration><businessUnit>$configuration.businessUnit</businessUnit><description1>$configuration.description1</description1><item><itemCatalog>$configuration.item.itemCatalog</itemCatalog><itemCustomer>$configuration.item.itemCustomer</itemCustomer><itemDescription>$configuration.item.itemDescription</itemDescription><itemFreeForm>$configuration.item.itemFreeForm</itemFreeForm><itemId>$configuration.item.itemId</itemId><itemProduct>$configuration.item.itemProduct</itemProduct><itemUOMPrimary>$configuration.item.itemUOMPrimary</itemUOMPrimary><itemUOMSecondary>$configuration.item.itemUOMSecondary</itemUOMSecondary></item><itemParent><itemCatalog>$configuration.itemParent.itemCatalog</itemCatalog><itemCustomer>$configuration.itemParent.itemCustomer</itemCustomer><itemDescription>$configuration.itemParent.itemDescription</itemDescription><itemFreeForm>$configuration.itemParent.itemFreeForm</itemFreeForm><itemId>$configuration.itemParent.itemId</itemId><itemProduct>$configuration.itemParent.itemProduct</itemProduct><itemUOMPrimary>$configuration.itemParent.itemUOMPrimary</itemUOMPrimary><itemUOMSecondary>$configuration.itemParent.itemUOMSecondary</itemUOMSecondary></itemParent><lineTypeCode>$configuration.lineTypeCode</lineTypeCode><quantityComponent>$configuration.quantityComponent</quantityComponent>#foreach($segment in $configuration.segment)\n                            <segment><segmentNumber>$segment.segmentNumber</segmentNumber><segmentValue>$segment.segmentValue</segmentValue></segment>#end\n                            <unitOfMeasureCodeComponent>$configuration.unitOfMeasureCodeComponent</unitOfMeasureCodeComponent></configuration>#end\n                        <description1>$detail.product.description1</description1><description2>$detail.product.description2</description2><item><itemCatalog>$detail.product.item.itemCatalog</itemCatalog><itemCustomer>$detail.product.item.itemCustomer</itemCustomer><itemDescription>$detail.product.item.itemDescription</itemDescription><itemFreeForm>$detail.product.item.itemFreeForm</itemFreeForm><itemId>$detail.product.item.itemId</itemId><itemProduct>$detail.product.item.itemProduct</itemProduct><itemUOMPrimary>$detail.product.item.itemUOMPrimary</itemUOMPrimary><itemUOMSecondary>$detail.product.item.itemUOMSecondary</itemUOMSecondary></item><itemVolume>$detail.product.itemVolume</itemVolume><itemWeight>$detail.product.itemWeight</itemWeight><location>$detail.product.location</location><lotNumber>$detail.product.lotNumber</lotNumber><unitOfMeasureCodeVolume>$detail.product.unitOfMeasureCodeVolume</unitOfMeasureCodeVolume><unitOfMeasureCodeWeight>$detail.product.unitOfMeasureCodeWeight</unitOfMeasureCodeWeight></product><quantityBackOrdered>$detail.quantityBackOrdered</quantityBackOrdered><quantityCanceled>$detail.quantityCanceled</quantityCanceled><quantityOrdered>$detail.quantityOrdered</quantityOrdered><quantityShippable>$detail.quantityShippable</quantityShippable><reference>$detail.reference</reference><relatedOrder><documentLineNumber>$detail.relatedOrder.documentLineNumber</documentLineNumber><relatedOrderKey><documentCompany>$detail.relatedOrder.relatedOrderKey.documentCompany</documentCompany><documentNumber>$detail.relatedOrder.relatedOrderKey.documentNumber</documentNumber><documentTypeCode>$detail.relatedOrder.relatedOrderKey.documentTypeCode</documentTypeCode></relatedOrderKey></relatedOrder><shipTo><entityId>$detail.shipTo.entityId</entityId><entityLongId>$detail.shipTo.entityLongId</entityLongId><entityTaxId>$detail.shipTo.entityTaxId</entityTaxId></shipTo><statusCodeLast>$detail.statusCodeLast</statusCodeLast><statusCodeNext>$detail.statusCodeNext</statusCodeNext><supplier><entityId>$detail.supplier.entityId</entityId><entityLongId>$detail.supplier.entityLongId</entityLongId><entityTaxId>$detail.supplier.entityTaxId</entityTaxId></supplier><timePromisedDelivery>$detail.timePromisedDelivery</timePromisedDelivery><timePromisedOriginal>$detail.timePromisedOriginal</timePromisedOriginal><timePromisedShip>$detail.timePromisedShip</timePromisedShip><timeRequested>$detail.timeRequested</timeRequested><timeScheduledPick>$detail.timeScheduledPick</timeScheduledPick><unitOfMeasureCodeTransaction>$detail.unitOfMeasureCodeTransaction</unitOfMeasureCodeTransaction><userReservedData><userReservedAmount>$detail.userReservedData.userReservedAmount</userReservedAmount><userReservedCode>$detail.userReservedData.userReservedCode</userReservedCode><userReservedDate>$detail.userReservedData.userReservedDate</userReservedDate><userReservedNumber>$detail.userReservedData.userReservedNumber</userReservedNumber><userReservedReference>$detail.userReservedData.userReservedReference</userReservedReference></userReservedData></detail>#end\n                <forwardedTo><entityId>$header.forwardedTo.entityId</entityId><entityLongId>$header.forwardedTo.entityLongId</entityLongId><entityTaxId>$header.forwardedTo.entityTaxId</entityTaxId></forwardedTo><holdOrderCode>$header.holdOrderCode</holdOrderCode><invoicedTo><entityId>$header.invoicedTo.entityId</entityId><entityLongId>$header.invoicedTo.entityLongId</entityLongId><entityTaxId>$header.invoicedTo.entityTaxId</entityTaxId></invoicedTo><orderTakenBy>$header.orderTakenBy</orderTakenBy><orderedBy>$header.orderedBy</orderedBy><paidBy><entityId>$header.paidBy.entityId</entityId><entityLongId>$header.paidBy.entityLongId</entityLongId><entityTaxId>$header.paidBy.entityTaxId</entityTaxId></paidBy><processing><actionType>$header.processing.actionType</actionType><processingVersion>$header.processing.processingVersion</processingVersion></processing><rateExchange>$header.rateExchange</rateExchange><salesOrderKey><documentCompany>$header.salesOrderKey.documentCompany</documentCompany><documentNumber>$header.salesOrderKey.documentNumber</documentNumber><documentTypeCode>$header.salesOrderKey.documentTypeCode</documentTypeCode></salesOrderKey><shipTo><addressLine1>$header.shipTo.addressLine1</addressLine1><addressLine2>$header.shipTo.addressLine2</addressLine2><addressLine3>$header.shipTo.addressLine3</addressLine3><addressLine4>$header.shipTo.addressLine4</addressLine4><city>$header.shipTo.city</city><countryCode>$header.shipTo.countryCode</countryCode><countyCode>$header.shipTo.countyCode</countyCode><customer><entityId>$header.shipTo.customer.entityId</entityId><entityLongId>$header.shipTo.customer.entityLongId</entityLongId><entityTaxId>$header.shipTo.customer.entityTaxId</entityTaxId></customer><mailingName>$header.shipTo.mailingName</mailingName><postalCode>$header.shipTo.postalCode</postalCode><stateCode>$header.shipTo.stateCode</stateCode></shipTo><soldTo><addressLine1>$header.soldTo.addressLine1</addressLine1><addressLine2>$header.soldTo.addressLine2</addressLine2><addressLine3>$header.soldTo.addressLine3</addressLine3><addressLine4>$header.soldTo.addressLine4</addressLine4><city>$header.soldTo.city</city><countryCode>$header.soldTo.countryCode</countryCode><countyCode>$header.soldTo.countyCode</countyCode><customer><entityId>$header.soldTo.customer.entityId</entityId><entityLongId>$header.soldTo.customer.entityLongId</entityLongId><entityTaxId>$header.soldTo.customer.entityTaxId</entityTaxId></customer><mailingName>$header.soldTo.mailingName</mailingName><postalCode>$header.soldTo.postalCode</postalCode><stateCode>$header.soldTo.stateCode</stateCode></soldTo><timeRequested>$header.timeRequested</timeRequested><timeScheduledPick>$header.timeScheduledPick</timeScheduledPick><userReservedData><userReservedAmount>$header.userReservedData.userReservedAmount</userReservedAmount><userReservedCode>$header.userReservedData.userReservedCode</userReservedCode><userReservedDate>$header.userReservedData.userReservedDate</userReservedDate><userReservedNumber>$header.userReservedData.userReservedNumber</userReservedNumber><userReservedReference>$header.userReservedData.userReservedReference</userReservedReference></userReservedData></header></ns0:processSalesOrder></SOAP-ENV:Body></SOAP-ENV:Envelope>"
+                    },
+                    "enableMTOM": {
+                        "value": false
+                    },
+                    "encodeAttribute": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "header": {
+                        "value": []
+                    },
+                    "httpHeaders": {
+                        "value": true
+                    },
+                    "maxRequests": {
+                        "value": 3
+                    },
+                    "operation": {
+                        "expression": false,
+                        "value": "{http://oracle.e1.bssv.JP420000/}processSalesOrder"
+                    },
+                    "outputEnvelope": {
+                        "value": true
+                    },
+                    "portName": {
+                        "expression": false,
+                        "value": "{http://oracle.e1.bssv.JP420000/}SalesOrderManagerPort"
+                    },
+                    "removeIllegalChars": {
+                        "value": false
+                    },
+                    "retryInterval": {
+                        "value": 2
+                    },
+                    "serviceName": {
+                        "expression": false,
+                        "value": "{http://oracle.e1.bssv.JP420000/}SalesOrderManagerService"
+                    },
+                    "sslProtocol": {
+                        "value": null
+                    },
+                    "successCondition": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "timeout": {
+                        "value": 0
+                    },
+                    "trustAllCerts": {
+                        "value": true
+                    },
+                    "useDefaultValue": {
+                        "value": false
+                    },
+                    "wsdl_url": {
+                        "expression": false,
+                        "value": "https://py-bssv.honestqa.com:8094/PY910/SalesOrderManager?WSDL"
+                    }
+                },
+                "view_serial": 103
+            }
+        }
+    }
+}
